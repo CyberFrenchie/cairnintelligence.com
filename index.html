@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cairn Intelligence — Threat Intelligence for UK Businesses</title>
+  <meta name="description" content="Cairn Intelligence delivers actionable threat intelligence to UK small businesses and SMEs. Monthly briefings, one-off investigations, and exposure assessments — written for decision-makers, not just technical teams.">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -175,7 +176,7 @@
     }
 
     /* SECTION */
-    section { padding: 80px 40px; }
+    section { padding: 80px 40px; scroll-margin-top: 64px; }
     .section-inner { max-width: 1040px; margin: 0 auto; }
     .section-label {
       font-size: 11px;
@@ -440,11 +441,12 @@
       text-align: center;
     }
     .stat-num {
-      font-size: 36px;
+      font-size: 22px;
       font-weight: 900;
       color: var(--gold);
       line-height: 1;
       margin-bottom: 6px;
+      letter-spacing: 0.04em;
     }
     .stat-label {
       font-size: 12px;
@@ -459,6 +461,7 @@
     .contact-bg { background: var(--navy); }
     .contact-bg .section-title { color: var(--white); }
     .contact-bg .section-sub { color: var(--slate-light); }
+    .contact-bg .section-label { color: var(--gold); }
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -827,6 +830,7 @@
         <div class="contact-form">
           <form action="https://formspree.io/f/mdaweppk" method="POST">
             <input type="hidden" name="_subject" value="New enquiry — Cairn Intelligence">
+            <input type="hidden" name="_next" value="https://cairnintelligence.com/#contact">
             <div class="form-row">
               <label>Your Name</label>
               <input type="text" name="name" placeholder="Jane Smith">
